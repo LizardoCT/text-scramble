@@ -1,0 +1,29 @@
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  place-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+p {
+  font-size: 3rem;
+  max-width: 460px;
+}
+
+p span {
+  background: transparent;
+  display: inline-block;
+  transition: all .6s ease-in-out;
+}
+
+img {
+  @media (max-width: 768px) {
+    height: 300px;
+  }
+}
